@@ -1,0 +1,19 @@
+{
+"login":[
+        { 
+        "username": "jyothipj@gmail.com", 
+        "password": "jyothi123"}],
+"data":[
+        {
+      "accountno": "44444444",
+      "departmentno": "4",
+      "pincode": "444444",
+      "salary": "4000"
+        },
+       {
+      "accountno": "88888888",
+      "departmentno": "8",
+      "pincode": "888888",
+      "salary": "8000"
+      }]
+    }

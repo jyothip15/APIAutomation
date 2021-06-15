@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-06-14T23:50:35Z" name="All Test Suite" finished-at="2021-06-14T23:50:54Z" duration-ms="18613">
+    <groups>
+    </groups>
+    <test started-at="2021-06-14T23:50:35Z" name="C:\Users\jyoth\eclipse-workspace\ApiAutomation\src\test\java\restAssured" finished-at="2021-06-14T23:50:54Z" duration-ms="18613">
+      <class name="restAssured.TekArchRestAssured">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:restAssured.TekArchRestAssured@397fbdb]" started-at="2021-06-14T23:50:35Z" name="startReport" finished-at="2021-06-14T23:50:35Z" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="baseURI()[pri:0, instance:restAssured.TekArchRestAssured@397fbdb]" started-at="2021-06-14T23:50:37Z" name="baseURI" finished-at="2021-06-14T23:50:37Z" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseURI -->
+        <test-method signature="TC_001_LoginTest(java.util.HashMap)[pri:0, instance:restAssured.TekArchRestAssured@397fbdb]" started-at="2021-06-14T23:50:37Z" name="TC_001_LoginTest" data-provider="fromJson" finished-at="2021-06-14T23:50:39Z" duration-ms="2081" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{username=jyothipj@gmail.com, password=jyothi123}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_001_LoginTest -->
+        <test-method signature="TC_002_getData()[pri:1, instance:restAssured.TekArchRestAssured@397fbdb]" started-at="2021-06-14T23:50:39Z" name="TC_002_getData" finished-at="2021-06-14T23:50:46Z" depends-on-methods="restAssured.TekArchRestAssured.TC_001_LoginTest" duration-ms="7020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_002_getData -->
+        <test-method is-config="true" signature="baseURI()[pri:0, instance:restAssured.TekArchRestAssured@397fbdb]" started-at="2021-06-14T23:50:39Z" name="baseURI" finished-at="2021-06-14T23:50:39Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseURI -->
+        <test-method is-config="true" signature="baseURI()[pri:0, instance:restAssured.TekArchRestAssured@397fbdb]" started-at="2021-06-14T23:50:46Z" name="baseURI" finished-at="2021-06-14T23:50:46Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseURI -->
+        <test-method signature="TC_003_adddata(java.util.HashMap)[pri:2, instance:restAssured.TekArchRestAssured@397fbdb]" started-at="2021-06-14T23:50:46Z" name="TC_003_adddata" data-provider="addJsonData" finished-at="2021-06-14T23:50:46Z" depends-on-methods="restAssured.TekArchRestAssured.TC_001_LoginTest" duration-ms="421" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{accountno=44444444, departmentno=4, pincode=444444, salary=4000}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_003_adddata -->
+        <test-method signature="TC_003_adddata(java.util.HashMap)[pri:2, instance:restAssured.TekArchRestAssured@397fbdb]" started-at="2021-06-14T23:50:46Z" name="TC_003_adddata" data-provider="addJsonData" finished-at="2021-06-14T23:50:47Z" depends-on-methods="restAssured.TekArchRestAssured.TC_001_LoginTest" duration-ms="328" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{accountno=88888888, departmentno=8, pincode=888888, salary=8000}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_003_adddata -->
+        <test-method is-config="true" signature="baseURI()[pri:0, instance:restAssured.TekArchRestAssured@397fbdb]" started-at="2021-06-14T23:50:46Z" name="baseURI" finished-at="2021-06-14T23:50:46Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseURI -->
+        <test-method is-config="true" signature="baseURI()[pri:0, instance:restAssured.TekArchRestAssured@397fbdb]" started-at="2021-06-14T23:50:47Z" name="baseURI" finished-at="2021-06-14T23:50:47Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseURI -->
+        <test-method signature="TC_004_deleteData(org.json.JSONObject)[pri:3, instance:restAssured.TekArchRestAssured@397fbdb]" started-at="2021-06-14T23:50:47Z" name="TC_004_deleteData" data-provider="dataForDelete" finished-at="2021-06-14T23:50:47Z" depends-on-methods="restAssured.TekArchRestAssured.TC_001_LoginTest, restAssured.TekArchRestAssured.TC_002_getData" duration-ms="344" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"id":"JJxaBqmWRfWcGsftGI1Z","userid":"kHacG2IP7Olqmq1CLFho"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_004_deleteData -->
+        <test-method signature="TC_005_updateData(org.json.JSONObject)[pri:4, instance:restAssured.TekArchRestAssured@397fbdb]" started-at="2021-06-14T23:50:47Z" name="TC_005_updateData" data-provider="dataForUpdate" finished-at="2021-06-14T23:50:48Z" depends-on-methods="restAssured.TekArchRestAssured.TC_001_LoginTest, restAssured.TekArchRestAssured.TC_002_getData" duration-ms="1391" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"pincode":"763291","accountno":"88884491","departmentno":"1","id":"wI71UEoFoBcNcvk7zibA","salary":"4000","userid":"kHacG2IP7Olqmq1CLFho"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_005_updateData -->
+        <test-method is-config="true" signature="baseURI()[pri:0, instance:restAssured.TekArchRestAssured@397fbdb]" started-at="2021-06-14T23:50:47Z" name="baseURI" finished-at="2021-06-14T23:50:47Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseURI -->
+        <test-method is-config="true" signature="baseURI()[pri:0, instance:restAssured.TekArchRestAssured@397fbdb]" started-at="2021-06-14T23:50:48Z" name="baseURI" finished-at="2021-06-14T23:50:48Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseURI -->
+        <test-method signature="TC_006_Logout(org.json.JSONObject)[pri:5, instance:restAssured.TekArchRestAssured@397fbdb]" started-at="2021-06-14T23:50:48Z" name="TC_006_Logout" data-provider="dataForLogout" finished-at="2021-06-14T23:50:53Z" depends-on-methods="restAssured.TekArchRestAssured.TC_001_LoginTest, restAssured.TekArchRestAssured.TC_002_getData" duration-ms="4807" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"userid":"kHacG2IP7Olqmq1CLFho","token":"aVeOPu7CNLAr6O06I0EJoSpCr39Gl4M1FfvXkYSOhqkWLow4NM1MZWBbywUP96YhIPBcjVKWkhV2V69kQSP5jnN9OE0oPYUK2tTk"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_006_Logout -->
+        <test-method is-config="true" signature="publishReport()[pri:0, instance:restAssured.TekArchRestAssured@397fbdb]" started-at="2021-06-14T23:50:53Z" name="publishReport" finished-at="2021-06-14T23:50:54Z" duration-ms="422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publishReport -->
+      </class> <!-- restAssured.TekArchRestAssured -->
+    </test> <!-- C:\Users\jyoth\eclipse-workspace\ApiAutomation\src\test\java\restAssured -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

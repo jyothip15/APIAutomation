@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="C:\Users\jyoth\eclipse-workspace\ApiAutomation\src\test\java\restAssured(failed)">
+    <classes>
+      <class name="restAssured.TekArchRestAssured">
+        <methods>
+          <include name="TC_006_Logout" invocation-numbers="0"/>
+          <include name="baseURI"/>
+          <include name="publishReport"/>
+          <include name="TC_001_LoginTest"/>
+          <include name="startReport"/>
+          <include name="TC_002_getData"/>
+        </methods>
+      </class> <!-- restAssured.TekArchRestAssured -->
+    </classes>
+  </test> <!-- C:\Users\jyoth\eclipse-workspace\ApiAutomation\src\test\java\restAssured(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

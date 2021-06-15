@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="loginmodule" parallel = "tests" thread-count="2">
+	<test name="LoginTest">
+		<classes>
+			<class name="login.Login_TC01" /> 
+			<class name="login.GetData" />
+			<class name="login.AddData" />
+			<class name="login.logout" />	
+		</classes>
+	</test>
+</suite>
